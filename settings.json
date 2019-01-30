@@ -5,7 +5,7 @@
 */
 {
   // name your instance!
-  "title": "Know Your Developer",
+  "title": "KYD",
 
   "address": "127.0.0.1:3001",
 
@@ -43,8 +43,8 @@
 
   // database settings (MongoDB)
   "dbsettings": {
-    "user": "enginama",
-    "password": "#Ryan9494#",
+    "user": "username",
+    "password": "password",
     "database": "explorerdb",
     "address": "localhost",
     "port": 27017
@@ -58,8 +58,8 @@
   "wallet": {
     "host": "localhost",
     "port": 12250,
-    "user": "JiUyYegt1v4fE",
-    "pass": "ScfgqdWO2SC1WqAi8rWyDLpC5uHJnQNbN"
+    "user": "rpc user",
+    "pass": "rpc password"
   },
 
   // confirmations
