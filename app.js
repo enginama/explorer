@@ -19,12 +19,14 @@ var ssl_options = {
   key: fs.readFileSync('./cert/server.key'),
   cert: fs.readFileSync('./cert/server.crt'),
   ca: fs.readFileSync('./cert/server.ca')
+  // End of added for SSL
 };
 
 var app = express();
 
 // Added for SSL
 var secureServer = https.createServer(ssl_options, app);
+// End of Added for SSL
 
 // bitcoinapi
 bitcoinapi.setWalletDetails(settings.wallet);
@@ -184,5 +186,6 @@ app.use(function(err, req, res, next) {
 
 // Added for SSL
 secureServer.listen(443);
+// End of Added for SSL
 
 module.exports = app;
